@@ -1,0 +1,12 @@
+<div>
+  <div>{{post.id}}</div>
+  <div>{{post.title}}</div>
+  <div>{{post.body}}</div>
+  <button (click)="showAuthor()">Show Author</button>
+  <button (click)="showComments()">Show comments</button>
+  <hr>
+  <div *ngIf="user">
+    {{user.id}} {{user.name}} {{user.email}}
+    <hr>
+  </div>
+</div>
