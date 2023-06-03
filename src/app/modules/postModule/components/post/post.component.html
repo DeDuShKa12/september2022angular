@@ -1,0 +1,8 @@
+<div>
+  {{post.id}}) {{post.title}}
+  <button (click)="showDetails()">{{isShow? 'Hide Details' : 'Show Details'}}</button>
+  <div *ngIf="isShow">
+    {{post.body}}
+    <button (click)="showComments()">Show Comments</button>
+  </div>
+</div>
