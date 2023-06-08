@@ -1,2 +1,5 @@
 export * from './environment.interface'
-
+export * from './cars.interface'
+export * from './auth.interface'
+export * from './pagination.interface'
+export * from './tokens.interface'
