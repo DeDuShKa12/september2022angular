@@ -10,7 +10,8 @@ const users: string = `${API}/users`
 
 const urls = {
   cars: {
-    full: cars
+    full: cars,
+    byId:(id: number): string => `${cars}/${id}`,
   },
   auth: {
     login: auth,
